@@ -81,4 +81,13 @@ footer {
 	grid-area: footer
 }
 
-@media (miin-width: 955px) {}
+@media (min-width: 955px) {
+	main {
+		grid-template-columns: repeat(3, 2fr);
+		grid-template-areas: "header header header"
+			"content author aside"
+			"content author aside"
+			"content plays aside"
+			"footer footer footer"
+	}
+}
