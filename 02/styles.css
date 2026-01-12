@@ -11,7 +11,15 @@ body {
 
 main {
 	display: grid;
-	margin: 24px
+	margin: 24px;
+	grid-template-columns: repeat(2, minmax(auto, 1fr)) 250px;
+	grid-template-areas:
+		"header header header"
+		"content content author"
+		"content content aside"
+		"plays   .       aside"
+		"footer  footer  footer";
+	gap: 20px
 }
 
 img {
@@ -19,10 +27,6 @@ img {
 	margin: 12px 12px 12px 0
 }
 
-main>* {
-	border: solid 1px #bfbfbf;
-	padding: 12px;
-}
 
 main>*,
 section {
@@ -46,3 +50,35 @@ article p span:nth-last-child(2) {
 .plays ul {
 	margin-left: 162px
 }
+
+header {
+	grid-area: header
+}
+
+
+
+article {
+	grid-area: content
+}
+
+
+
+aside {
+	grid-area: aside
+}
+
+
+
+.author-details {
+	grid-area: author
+}
+
+.plays {
+	grid-area: plays
+}
+
+footer {
+	grid-area: footer
+}
+
+@media (miin-width: 955px) {}
