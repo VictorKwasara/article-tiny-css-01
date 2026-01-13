@@ -105,3 +105,43 @@ rect:nth-child(11) {
 		transform: scaleY(1)
 	}
 }
+
+@media (prefers-reduced-motion: reduce) {
+	rect {
+		animation: none
+	}
+}
+
+progress {
+	height: 24px;
+	width: 100%;
+	/* accent-color: #128688; */
+	/* background: pink;  does not work*/
+	border-radius: 20px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: linear-gradient(to right, #128688 0%, #4db3ff 100%);
+	border: none;
+}
+
+::-webkit-progress-value {
+	border-radius: 20px;
+	background-color: #7be6e8
+}
+
+::-moz-progress-bar {
+	border-radius: 20px;
+	background-color: #7be6e8;
+}
+
+/*::-webkit-progress-bar -- The entire bar of the progress element, the portion below the progress indicator and the child of ::-webkit-progress-inner-element*/
+::-webkit-progress-bar {
+	border-radius: 20px;
+	background: #4db3ff;
+	background: linear-gradient(to right, #128688 0%, #4db3ff 100%);
+}
+
+::-webkit-progress-inner-elemnt {
+	border-radius: 20px;
+}
