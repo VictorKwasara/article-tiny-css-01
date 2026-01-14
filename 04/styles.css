@@ -56,3 +56,13 @@ blockquote::before {
 blockquote::after {
 	content: close-quote
 }
+
+@counter-style emoji {
+	symbols: "\2615" " \1F920";
+	system: cyclic;
+	suffix: " ";
+}
+
+article ul {
+	list-style: emoji;
+}
