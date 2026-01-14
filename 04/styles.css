@@ -16,3 +16,43 @@ h1 {
 	text-align: center;
 	text-transform: uppercase;
 }
+
+h2 {
+	font: 3rem/.95 'Oswald', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+h3 {
+	font: 2rem/.95 'Oswald', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+
+time {
+	font: 700 1.5rem 'Oswald', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 3px solid #333333;
+	border-bottom: 3px solid #333333;
+	padding: 12px 0;
+	display: block;
+}
+
+time sup {
+	font-size: .875rem;
+	font-weight: normal;
+}
+
+blockquote {
+	font: 1.8rem/1.25 'Oswald', sans-serif;
+	margin: 1.5rem 2rem;
+}
+
+blockquote::before {
+	content: open-quote;
+}
+
+blockquote::after {
+	content: close-quote
+}
